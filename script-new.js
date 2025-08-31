@@ -36,6 +36,57 @@ function initializePreloader() {
     });
 }
 
+//فيديو
+// ==================== Video Lightbox Logic ====================
+function initializeVideoLightbox() {
+    const videoItems = document.querySelectorAll('.video-item');
+    const lightbox = document.getElementById('video-lightbox');
+    const closeButton = document.getElementById('close-lightbox');
+    const lightboxIframe = document.getElementById('lightbox-iframe');
+
+    if (!lightbox || !videoItems.length) return;
+
+    videoItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const videoId = item.getAttribute('data-video-id');
+            if (videoId) {
+                const videoUrl = `https://drive.google.com/file/d/${videoId}/preview`;
+                lightboxIframe.setAttribute('src', videoUrl );
+                lightbox.classList.add('show');
+            }
+        });
+    });
+
+    function closeLightbox() {
+        lightbox.classList.remove('show');
+        // Stop the video from playing in the background
+        lightboxIframe.setAttribute('src', '');
+    }
+
+    closeButton.addEventListener('click', closeLightbox);
+
+    // Close lightbox when clicking on the background
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close lightbox with the 'Escape' key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('show')) {
+            closeLightbox();
+        }
+    });
+}
+
+// Call the new function inside the main DOMContentLoaded event listener
+document.addEventListener('DOMContentLoaded', function() {
+    // ... (all your other initialize functions like initializePreloader, etc.)
+    initializeVideoLightbox(); // Add this line
+});
+
+
 // Custom Cursor
 function initializeCursor() {
     cursor = document.querySelector('.cursor');
