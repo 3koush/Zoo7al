@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد عكوش - مصمم جرافيك</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style-new.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="logo-loader">
+                <div class="loader-ring"></div>
+                <div class="loader-text">زحل</div>
+            </div>
+            <div class="loading-text">جاري التحميل...</div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">              
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link" data-ar="نبذة عني" data-en="About">نبذة عني</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link" data-ar="خدماتي" data-en="Services">خدماتي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link" data-ar="أعمالي" data-en="Portfolio">أعمالي</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#packages" class="nav-link" data-ar="الباقات" data-en="Packages">الباقات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link" data-ar="تواصل" data-en="Contact">تواصل</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="nav-actions">
+                     <button class="nav-toggle" id="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-text" data-ar="مرحباً، أنا" data-en="Hello, I'm">مرحباً، أنا</span>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="name-part">أحمد</span>
+                        <span class="name-part highlight">عكوش</span>
+                    </h1>
+                    <div class="hero-title">
+                        <span class="title-text" data-ar="مصمم جرافيك محترف" data-en="Professional Graphic Designer">مصمم جرافيك </span>
+                        <div class="title-decoration"></div>
+                    </div>
+                    <p class="hero-description" data-ar="أحول الأفكار إلى تصاميم بصرية مذهلة تحكي قصة علامتك التجارية بطريقة إبداعية ومؤثرة" data-en="I transform ideas into stunning visual designs that tell your brand story in a creative and impactful way">
+                        أحول الأفكار إلى تصاميم بصرية مذهلة تحكي قصة علامتك التجارية بطريقة إبداعية ومؤثرة
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <span data-ar="استكشف أعمالي" data-en="Explore My Work">استكشف أعمالي</span>
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1DvhCRpA9-gCkvA3KluGYTx3MAXz4AfVA/view?usp=drivesdk" download class="btn btn-outline" target="_blank">
+                            <span data-ar="تحميل السيرة الذاتية" data-en="Download CV">تحميل السيرة الذاتية</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="./photo.jpg" alt="أحمد خالد عكوش">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-card card-1">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fab fa-adobe"></i>
+                                <span>Adobe</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-palette"></i>
+                                <span>Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text" data-ar="تمرير للأسفل" data-en="Scroll Down">تمرير للأسفل</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-ar="تعرف عليّ" data-en="Get to know me">تعرف عليّ</div>
+                <h2 class="section-title" data-ar="نبذة عني" data-en="About Me">نبذة عني</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3 data-ar="مصمم جرافيك شغوف بالإبداع والتميز" data-en="A graphic designer passionate about creativity and excellence">
+                            مصمم جرافيك شغوف بالإبداع والتميز
+                        </h3>
+                        <p data-ar="مع 5 سنوات من الخبرة في مجال التصميم الجرافيكي، أتخصص في إنشاء هويات بصرية قوية ومحتوى إبداعي يجذب الجمهور ويحقق أهداف العلامة التجارية." data-en="With 5 years of experience in graphic design, I specialize in creating strong visual identities and creative content that attracts audiences and achieves brand goals.">
+                            مع 5 سنوات من الخبرة في مجال التصميم الجرافيكي، أتخصص في إنشاء هويات بصرية قوية ومحتوى إبداعي يجذب الجمهور ويحقق أهداف العلامة التجارية.
+                        </p>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label" data-ar="مشروع مكتمل" data-en="Completed Projects">مشروع مكتمل</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label" data-ar="سنوات خبرة" data-en="Years Experience">سنوات خبرة</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label" data-ar="شهادة معتمدة" data-en="Certifications">شهادة معتمدة</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-skills">
+                        <h4 data-ar="مهاراتي الأساسية" data-en="Core Skills">مهاراتي الأساسية</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-adobe"></i>
+                                <span>Adobe Creative Suite</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span data-ar="الهوية البصرية" data-en="Brand Identity">الهوية البصرية</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>UI/UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="experience-card">
+                        <div class="card-header">
+                            <h5 data-ar="خبرتي المهنية" data-en="Professional Experience">خبرتي المهنية</h5>
+                        </div>
+                        <div class="experience-list">
+                            <div class="experience-item">
+                                <div class="exp-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="exp-content">
+                                    <h6 data-ar="مدير شركة - Zo7al Agancy" data-en="Graphic Designer - Freelance">مدير شركة - Zo7al Agancy</h6>
+                                    <span class="exp-date">2024 - الآن</span>
+                                </div>
+                            </div>
+                            <div class="experience-item">
+                                <div class="exp-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <div class="exp-content">
+                                    <h6 data-ar="مدرب - IT Zone" data-en="Trainer - IT Zone">مدرب - IT Zone</h6>
+                                    <span class="exp-date">2024 - الآن</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-ar="ما أقدمه" data-en="What I Offer">ما أقدمه</div>
+                <h2 class="section-title" data-ar="خدماتي" data-en="My Services">خدماتي</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-ar="تصميم الهوية البصرية" data-en="Brand Identity Design">تصميم الهوية البصرية</h3>
+                    <p data-ar="إنشاء هوية بصرية متكاملة تشمل الشعار والألوان والخطوط" data-en="Creating comprehensive visual identity including logo, colors, and fonts">
+                        إنشاء هوية بصرية متكاملة تشمل الشعار والألوان والخطوط
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 data-ar="تصميم وسائل التواصل" data-en="Social Media Design">تصميم وسائل التواصل</h3>
+                    <p data-ar="تصميم محتوى إبداعي لمنصات التواصل الاجتماعي" data-en="Creative content design for social media platforms">
+                        تصميم محتوى إبداعي لمنصات التواصل الاجتماعي
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3 data-ar="تصميم المطبوعات" data-en="Print Design">تصميم المطبوعات</h3>
+                    <p data-ar="تصميم البروشورات والكتالوجات والمواد التسويقية" data-en="Designing brochures, catalogs, and marketing materials">
+                        تصميم البروشورات والكتالوجات والمواد التسويقية
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-ar="تصميم واجهات المستخدم" data-en="UI/UX Design">تصميم واجهات المستخدم</h3>
+                    <p data-ar="تصميم واجهات تطبيقات ومواقع سهلة الاستخدام" data-en="Designing user-friendly app and website interfaces">
+                        تصميم واجهات تطبيقات ومواقع سهلة الاستخدام
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-ar="أعمالي المميزة" data-en="Featured Work">أعمالي المميزة</div>
+                <h2 class="section-title" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</h2>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+                <button class="filter-btn" data-filter="branding" data-ar="تصميم UI UX" data-en="Branding">تصميم UI UX</button>
+                <button class="filter-btn" data-filter="social" data-ar="وسائل التواصل" data-en="Social Media">وسائل التواصل</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="./local hub.png" alt="مشروع 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>Local Hub</h4>
+                                <p>تصميم موقع متكاملة</p>
+                                <a href="https://www.behance.net/gallery/225625497/LocalHub" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+ <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="./سكينة.png" alt="مشروع 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>سكينة|تطبيق ديني</h4>
+                                <p>تصميم تطبيقات متكاملة</p>
+                                <a href="https://www.behance.net/gallery/222593925/_" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="./MY-Prtfoilo.png" alt="مشروع 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>My-Portfolio</h4>
+                                <p>نبذة عن شغلي</p>
+                                <a href="https://www.behance.net/gallery/225960629/My-Portfolio" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="./gdsc eelu.png" alt="مشروع 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>GDSC eelu-beni-suif</h4>
+                                <p>نادى مطورين جوجل</p>
+                                <a href="https://www.behance.net/gallery/217034731/GDSC-eelu-beni-suif" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image">
+                        <img src="./SVNU.png" alt="مشروع 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h4>SVNU</h4>
+                                <p>[اليوم التعريفي جامعه جنوب الوادى الاهليه ]</p>
+                                <a href="https://www.behance.net/gallery/217037117/SVNU" class="portfolio-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-ar="اختر ما يناسبك" data-en="Choose What Suits You">اختر ما يناسبك</div>
+                <h2 class="section-title" data-ar="باقات الخدمات" data-en="Service Packages">باقات الخدمات</h2>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 data-ar="الباقة الأساسية" data-en="Basic Package">الباقة الأساسية</h3>
+                        <div class="package-price">
+                            <span class="price-old">2000</span>
+                            <span class="price-new">1500</span>
+                            <span class="price-currency">جنيه</span>
+                        </div>
+                        <div class="package-period" data-ar="لأول 3 شهور" data-en="For first 3 months">لأول 3 شهور</div>
+                    </div>
+                    <div class="package-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 8 تصميمات ثابتة شهرياً</li>
+                            <li><i class="fas fa-check"></i> تقرير شهري</li>
+                            <li><i class="fas fa-check"></i> دعم فني</li>
+                        </ul>
+                    </div>
+                    <div class="package-footer">
+                        <a href="#contact" class="btn btn-outline">اختر الباقة</a>
+                    </div>
+                </div>
+                
+                <div class="package-card featured">
+                    <div class="package-badge">الأكثر طلباً</div>
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 data-ar="الباقة المتقدمة" data-en="Advanced Package">الباقة المتقدمة</h3>
+                        <div class="package-price">
+                            <span class="price-old">3000</span>
+                            <span class="price-new">2500</span>
+                            <span class="price-currency">جنيه</span>
+                        </div>
+                        <div class="package-period" data-ar="لأول 3 شهور" data-en="For first 3 months">لأول 3 شهور</div>
+                    </div>
+                    <div class="package-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 20 تصميم احترافي شهرياً</li>
+                            <li><i class="fas fa-check"></i> 4 فيديوهات Reels</li>
+                            <li><i class="fas fa-check"></i> تقرير كل أسبوعين</li>
+                            <li><i class="fas fa-check"></i> استشارات مجانية</li>
+                        </ul>
+                    </div>
+                    <div class="package-footer">
+                        <a href="#contact" class="btn btn-primary">اختر الباقة</a>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 data-ar="الباقة الذهبية" data-en="Premium Package">الباقة الذهبية</h3>
+                        <div class="package-price">
+                            <span class="price-old">4000</span>
+                            <span class="price-new">3500</span>
+                            <span class="price-currency">جنيه</span>
+                        </div>
+                        <div class="package-period" data-ar="لأول 3 شهور" data-en="For first 3 months">لأول 3 شهور</div>
+                    </div>
+                    <div class="package-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 30 تصميم مميز شهرياً</li>
+                            <li><i class="fas fa-check"></i> 8 فيديو Reels احترافي</li>
+                            <li><i class="fas fa-check"></i> تقرير أسبوعي</li>
+                            <li><i class="fas fa-check"></i> جلسات تصوير</li>
+                        </ul>
+                    </div>
+                    <div class="package-footer">
+                        <a href="#contact" class="btn btn-outline">اختر الباقة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle" data-ar="لنبدأ مشروعك" data-en="Let's Start Your Project">لنبدأ مشروعك</div>
+                <h2 class="section-title" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>واتساب</h4>
+                            <a href="https://wa.me/+201011728299" target="_blank">01011728299</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-behance"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>بيهانس</h4>
+                            <a href="https://www.behance.net/ahmed_akoush" target="_blank">ahmed_akoush</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>لينكد إن</h4>
+                            <a href="https://www.linkedin.com/in/ahmed-akoush" target="_blank">ahmed-akoush</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" >
+                            <label for="name" data-ar="الاسم" data-en="Name">الاسم</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" >
+                            <label for="email" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" ></textarea>
+                            <label for="message" data-ar="الرسالة" data-en="Message">الرسالة</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span data-ar="إرسال الرسالة" data-en="Send Message">إرسال الرسالة</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./zo7al.png" alt="zo7al"style width="60px" height="40px";>
+                </div>
+                <div class="footer-text">
+                    <p data-ar="© 2025 أحمد خالد عكوش. جميع الحقوق محفوظة." data-en="© 2025 Ahmed Khaled Akoush. All rights reserved.">
+                        © 2025 أحمد خالد محمد عكوش. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100083379326374" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.behance.net/ahmed_akoush" target="_blank">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-akoush" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script-new.js"></script>
+</body>
+</html>
+
