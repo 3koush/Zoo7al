@@ -1068,6 +1068,71 @@ body {
     font-size: 0.9rem;
     color: var(--text-light);
 }
+/* Clients Slider Styling */
+.clients-slider {
+    padding: 60px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.logos-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.logos-track {
+    display: flex;
+    width: calc(250px * 10); /* عرض اللوجو الواحد مضروب في عدد اللوجوهات الكلي */
+    animation: scrollLogos 25s linear infinite; /* سرعة الحركة */
+}
+
+.client-logo {
+    width: 200px; /* تحكم في حجم اللوجو */
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%); /* لجعل اللوجوهات رمادية وتتحول لألوانها عند الهوفر */
+    opacity: 0.6;
+    transition: var(--transition);
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.client-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* حركة الشريط */
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 5)); /* نصف العدد الكلي للوجوهات */
+    }
+}
+
+/* في حالة اللغة الإنجليزية، نعكس اتجاه الحركة */
+[lang="en"] .logos-track {
+    animation: scrollLogosEn 25s linear infinite;
+}
+
+@keyframes scrollLogosEn {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(250px * 5));
+    }
+}
 
 /* Services Section */
 .services {
